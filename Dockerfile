@@ -11,3 +11,5 @@ COPY --from=build /kdiscovery /kdiscovery
 EXPOSE 8080
 USER nonroot:nonroot
 ENTRYPOINT ["/kdiscovery"]
+
+# docker build -t  alpinsky/kdiscovery:1.0.0 . && docker push alpinsky/kdiscovery:1.0.0
